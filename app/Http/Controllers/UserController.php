@@ -168,6 +168,7 @@ class UserController extends Controller {
 	public function getRoles()
 	{
 		$roles = $this->role_gestion->all();
+		//dd($roles);
 
 		return view('back.users.roles', compact('roles'));
 	}
